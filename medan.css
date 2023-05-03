@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav .logo a {
+  font-weight: bold;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.burger {
+  display: none;
+  float: right;
+  font-size: 28px;
+  margin-top: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+/*content*/
+.content {
+  background-image: url("gambar.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 50%;
+}
+
+.text h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.text p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.content {
+  background-image: url("gelombang.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+.content {
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.vidio1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -30;
+  filter: brightness(50%);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid white;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.materi13 {
+  background-image: url("bintang1.jpg");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.gambar13 {
+  width: 30%;
+  height: 30%;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+
+.materi13 p {
+  font-size: 1.2rem;
+  text-align: justify;
+  max-width: 100%;
+}
+
+.rumus1 {
+  width: 30%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gambar2 {
+  display: flex;
+  width: 30%;
+  height: 30%;
+}
+
+.content2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+.content2 p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.rumus2 {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: auto;
+}
+
+.materi3 {
+  background-image: url("bintang2.jpg");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250vh;
+}
+
+.gambar13_3 {
+  width: 30%;
+  height: 30%;
+  border-radius: 3px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ 
+}
+.materi3 h1 {
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.materi3 p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: justify;
+  max-width: 100%;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.rumus31, .rumus32,.rumus33, .rumus34 {
+  width: 30%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #100f0f;
+    width: 100%;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger:hover {
+    background-color: #b3670a;
+    color: rgb(250, 241, 241);
+  }
+}
